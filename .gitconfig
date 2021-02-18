@@ -1,0 +1,6 @@
+[user]
+	name = Doug Tyler
+	email = dougwt@gmail.com
+	signingkey = 6BBDE40B41C850D18D1C1EDB1E2E4A672EFF0A11
+[gpg]
+        program = /usr/local/bin/gpg
