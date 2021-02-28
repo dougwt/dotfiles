@@ -12,6 +12,7 @@ export PATH="/usr/local/bin:/usr/local/sbin:~/bin:$PATH"
 ################################################################
 
 # Use `dotfiles` alias to manage dotfiles git repo
+# For more info, see: https://www.atlassian.com/git/tutorials/dotfiles
 alias dotfiles='/usr/local/bin/git --git-dir=/Users/dougwt/.dotfiles/ --work-tree=/Users/dougwt'
 
 # Use `update` alias to update AppStore, Homebrew, Ruby, and NPM apps
@@ -40,10 +41,8 @@ eval "$(starship init zsh)"
 # Enable ZSH auto correction
 ENABLE_CORRECTION="true"
 
-# Load additional auto completion definitions for ZSH
-if type brew &>/dev/null; then
-  FPATH=$(brew --prefix)/share/zsh-completions:$FPATH
+# Load Antigen
+source /usr/local/share/antigen/antigen.zsh
 
-  autoload -Uz compinit
-  compinit
-fi
+# Load Antigen configurations
+antigen init ~/.antigenrc

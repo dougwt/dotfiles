@@ -1,0 +1,32 @@
+# Load oh-my-zsh library
+antigen use oh-my-zsh
+
+# Add colors to man pages
+antigen bundle colored-man-pages
+
+# Add syntax highlighting
+antigen bundle colorize
+
+# Provide suggested packages to be installed if a command cannot be found
+antigen bundle command-not-found
+
+# Alias httpie to always use https protocol
+antigen bundle httpie
+
+# Add aliases for dealing with json data
+antigen bundle jsontools
+
+# Add aliases for URL-encoding and URL-decoding strings
+antigen bundle urltools
+
+# Add additional auto completion definitions for zsh
+antigen bundle zsh-users/zsh-completions
+
+# Add Fish-like autosuggestions for zsh
+antigen bundle zsh-users/zsh-autosuggestions
+
+# Add Fish-like sytax highlighting for zsh
+antigen bundle zsh-users/zsh-syntax-highlighting
+
+# Tell Antigen that you're done
+antigen apply
